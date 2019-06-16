@@ -1,0 +1,28 @@
+server: 
+  port: 9004
+spring: 
+  application:  
+    name: tensquare-article #指定服务名
+  datasource:  
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.66.128:3306/tensquare_article?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 123456
+  jpa: 
+    database: MySQL
+    show-sql: true
+  redis:
+    host: 192.168.66.128
+  data:
+    mongodb:
+      host: 192.168.66.128
+      database: articledb
+jwt:
+  config:
+    key: zao
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6868/eureka
+  instance:
+    prefer-ip-address: true
