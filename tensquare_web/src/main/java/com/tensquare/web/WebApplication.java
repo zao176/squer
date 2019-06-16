@@ -11,6 +11,11 @@ public class WebApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(WebApplication.class);
+
+
+        System.out.println(1111);
+
+        System.out.println(22222);
         System.out.println(3333);
     }
 }
